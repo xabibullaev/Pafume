@@ -1,0 +1,126 @@
+.main {
+  &__container {
+    margin: 0 auto;
+    margin-top: 200px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+  }
+  &__box {
+    display: flex;
+    column-gap: 50px;
+    border-radius: 15px;
+  }
+  &__content {
+    padding-top: 50px;
+  }
+  &__img {
+    width: 300px;
+    height: 500px;
+  }
+  &__subtitle {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #333d4b;
+    letter-spacing: 5px;
+  }
+  &__title {
+    margin-top: 24px;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    width: 270px;
+    color: #333d4b;
+  }
+  &__text {
+    width: 270px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 16px;
+    color: #333d4b;
+  }
+  &__flex {
+    margin-top: 24px;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+  }
+  &__price {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 46px;
+    color: #3d8168;
+  }
+  &__number {
+    font-family: "Fraunces";
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  &__btn {
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 200px;
+    padding: 10px 0;
+    background-color: #3d8168;
+    border: none;
+    border-radius: 5px;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+
+    color: #ffff;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 570px) {
+  .main {
+    &__container {
+      margin-left: 150px;
+      margin-top: 200px;
+      box-sizing: border-box;
+      width: 550px;
+    }
+    &__box {
+      background-color: antiquewhite;
+      width: 400px;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__img {
+      width: 400px;
+      height: 350px;
+    }
+    &__content {
+      margin-left: 10px;
+      padding-top: 16px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__title {
+      width: 400px;
+    }
+    &__price {
+      font-size: 36px;
+    }
+    &__icon {
+      position: absolute;
+      left: 30px;
+    }
+    &__btn {
+      position: relative;
+      margin-left: 0;
+    }
+  }
+}
